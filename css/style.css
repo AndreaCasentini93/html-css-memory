@@ -35,7 +35,7 @@ footer > h4 {
     margin: 13px 10px;
     border-radius: 10px;
     padding: 10px;
-    background-color: white;
+    background-color: #FFFFFF;
     box-shadow: 1.5px 1.5px 1.5px #7D9BA4;
     text-shadow: 1.5px 1.5px 1.5px #7D9BA4;
 }
@@ -82,16 +82,16 @@ footer > h4 {
     color: #E67919;
 }
 .color_blue {
-    color: deepskyblue;
+    color: #00BFFF;
 }
 .color_green {
-    color: limegreen;
+    color: #32CD32;
 }
 .color_violet {
-    color: violet;
+    color: #EE82EE;
 }
 .color_red {
-    color: red;
+    color: #FF0000;
 }
 
 /* header */
