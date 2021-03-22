@@ -6,6 +6,7 @@
 }
 
 body {
+    font-family: 'Nerko One', cursive;
     background-color: #ADD8E6;
 }
 
@@ -26,24 +27,37 @@ main > section {
     margin: 0 auto;
 }
 
+header > h1,
+footer > h4 {
+    text-align: center;
+    vertical-align: middle;
+    text-transform: uppercase;
+}
+
 .card {
     float: left;
     width: calc(25% - 20px);
     height: calc(200px - 26px);
     margin: 13px 10px;
     border-radius: 10px;
-    background-color: #FFFFFF;
+    background-color: white;
+    box-shadow: 2px 2px 2px #7D9BA4;
+    text-shadow: 1px 1px 1px #7D9BA4;
+}
+.card:not(#card_static) {
+    background-image: url('../img/pattern.png');
+    background-size: contain;
+    background-position: center;
 }
 
 /* header */
 header {
     height: 60px;
     line-height: 60px;
-}
-header > h1 {
-    text-align: center;
-    vertical-align: middle;
-    text-transform: uppercase;
+    margin-bottom: 25px;
+    font-size: 35px;
+    color: #FFFFFF;
+    text-shadow: 1px 1px 1px #7D9BA4;
 }
 
 /* main */
@@ -55,9 +69,4 @@ main {
 footer {
     height: 50px;
     line-height: 50px;
-}
-footer > h4 {
-    text-align: center;
-    vertical-align: middle;
-    text-transform: uppercase;
 }
