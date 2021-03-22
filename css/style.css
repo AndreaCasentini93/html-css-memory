@@ -1,5 +1,60 @@
+/* debug */
+header {
+    background-color: yellow;
+}
+
+footer {
+    background-color: blue;
+}
+/* /debug */
+
+/* common */
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+}
+
+body {
+    background-color: #ADD8E6;
+}
+
+.clearfix {
+    clear: both;
+    content: "";
+    display: table;
+}
+
+#container {
+    width: 60%;
+    margin: 40px auto;
+}
+
+main > section {
+    width: 100%;
+    height: 250px;
+}
+
+.card {
+    float: left;
+    width: calc(25% - 30px);
+    height: calc(250px - 36px);
+    margin: 18px 15px;
+    border-radius: 10px;
+    background-color: #FFFFFF;
+}
+
+/* header */
+header {
+    height: 100px;
+}
+
+/* main */
+main {
+    height: 750px;
+}
+
+/* footer */
+footer {
+    height: 60px;
 }
