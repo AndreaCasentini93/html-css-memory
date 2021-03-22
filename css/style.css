@@ -53,7 +53,7 @@ footer > h4 {
     object-fit: contain;
 }
 .card_text:not(#card_static > h3) {
-    display: none;
+   display: none;
 }
 .card_text {
     width: 100%;
@@ -64,11 +64,22 @@ footer > h4 {
     font-size: 25px;
 }
 
-.card:hover > .card_img {
+.card:hover {
     cursor: pointer;
+    background-image: none;
+}
+.card:hover .card_img {
+    
 }
 .card:hover .card_text {
     
+}
+
+.color_pink {
+    color: #E61986;
+}
+.color_orange {
+    color: #E67919;
 }
 
 /* header */
