@@ -45,7 +45,7 @@ footer > h4 {
     background-position: center;
 }
 .card_img:not(#card_static > img) {
-    display: none;
+    visibility: hidden;
 }
 .card_img {
     width: 100%;
@@ -53,7 +53,7 @@ footer > h4 {
     object-fit: contain;
 }
 .card_text:not(#card_static > h3) {
-   display: none;
+   visibility: hidden;
 }
 .card_text {
     width: 100%;
@@ -64,15 +64,15 @@ footer > h4 {
     font-size: 25px;
 }
 
-.card:hover {
+.card:not(#card_static):hover{
     cursor: pointer;
     background-image: none;
 }
-.card:hover .card_img {
-    
+.card:hover .card_img:not(#card_static > img) {
+    visibility: visible;
 }
-.card:hover .card_text {
-    
+.card:hover .card_text:not(#card_static > h3) {
+    visibility: visible;
 }
 
 .color_pink {
@@ -80,6 +80,18 @@ footer > h4 {
 }
 .color_orange {
     color: #E67919;
+}
+.color_blue {
+    color: deepskyblue;
+}
+.color_green {
+    color: limegreen;
+}
+.color_violet {
+    color: violet;
+}
+.color_red {
+    color: red;
 }
 
 /* header */
